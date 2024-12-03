@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap');
+
+html{
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center fixed;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin-top: 8rem;
+}
+
+/* Header */
+
+header .container-menu{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5.5rem;
+    background: transparent;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+}
+
+header .container-menu h1{
+    font-size: 3rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #D3F1DF;
+    transition: 0.4s;
+}
+
+header .container-menu h1:hover{
+    color: #5A6C57;
+}
+
+header .container-menu input{
+    display: none;
+}
+
+
+
+/* Me */
+
+.me{
+    background: transparent;
+    height: 89vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.me h2{
+    display: block;
+    font-size: 7.5rem;
+    color: #D3F1DF;
+    font-family: 'Poppins' Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.me p{
+    font-size: 3.2rem;
+    font-family: 'Roboto';
+    color: #D3F1DF;
+    font-weight: 400;
+}
+
+
+
+.me:after{
+    content: url('../images/arrow-down-solid.png');
+    position: absolute;
+    height: 35px;
+    bottom: 40px;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes downarrow{
+    0% {-webkit-transform: translateY(0); opacity: 0.4;}
+    100%{-webkit-transform: translateY(0.4em); opacity: 0.9;}
+}
+
+/* About */
+.about{
+    background-color: aliceblue;
+}
+
+/* EXPERIENCE */
+
+.experience{
+   
+}
+
+/* PROJECTS */
+
+.projects{
+    
+}
+
+/* CONTACT */
+
+.contact{
+    
+}

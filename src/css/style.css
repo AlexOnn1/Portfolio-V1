@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400;500;700;900&display=swap');
 
-body{
+body {
     display: flex;
     flex-direction: column;
 }
@@ -9,8 +9,8 @@ body{
 
 /* Header */
 
-header .container-menu{
-    
+header .container-menu {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,12 +22,12 @@ header .container-menu{
     transition: 0.6s;
 }
 
-header .container-menu.scrolled{
+header .container-menu.scrolled {
     background-color: rgba(90, 108, 87, 1);
     padding: 1rem 5.5rem;
 }
 
-header .container-menu.scrolled h1:hover{
+header .container-menu.scrolled h1:hover {
     background-color: #D3F1DF;
     border-radius: 50px;
     padding: 0rem 2rem;
@@ -35,19 +35,20 @@ header .container-menu.scrolled h1:hover{
 
 
 
-header .container-menu h1{
+header .container-menu h1 {
     font-size: 3rem;
     font-family: 'Poppins';
     font-weight: 700;
     color: #D3F1DF;
     transition: 0.4s;
+    text-transform: uppercase;
 }
 
-header .container-menu h1:hover{
+header .container-menu h1:hover {
     color: #5A6C57;
 }
 
-header .container-menu input{
+header .container-menu input {
     display: none;
 }
 
@@ -55,7 +56,7 @@ header .container-menu input{
 
 /* Me */
 
-.me{
+.me {
     background: transparent;
     height: 99vh;
     position: relative;
@@ -69,15 +70,16 @@ header .container-menu input{
     background-position: center center fixed;
 }
 
-.me h2{
+.me h2 {
     display: block;
     font-size: 7.5rem;
     color: #D3F1DF;
     font-family: 'Poppins' Arial, Helvetica, sans-serif;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
-.me p{
+.me p {
     font-size: 3.2rem;
     font-family: 'Roboto';
     color: #D3F1DF;
@@ -86,7 +88,7 @@ header .container-menu input{
 
 
 
-.me:after{
+.me:after {
     content: url('../images/arrow-down-solid.png');
     position: absolute;
     height: 35px;
@@ -94,31 +96,137 @@ header .container-menu input{
     animation: downarrow 0.6s infinite alternate ease-in-out;
 }
 
-@-webkit-keyframes downarrow{
-    0% {-webkit-transform: translateY(0); opacity: 0.4;}
-    100%{-webkit-transform: translateY(0.4em); opacity: 0.9;}
+@-webkit-keyframes downarrow {
+    0% {
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.9;
+    }
 }
 
 /* About */
-.about{
-    background-color: aliceblue;
-    height: 1000px;
+.about {
+    background-color: #E5E3D4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 500px 1fr;
 }
+
+.about .title-about{
+    grid-area: 1/1/2/4;
+    text-align: center;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.about .title-about h2{
+    font-size: 3rem;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #525B44;
+}
+
+.about .image-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 2/1/2/1;
+}
+
+.about .image-about img{
+    max-height: 300px;
+    border-radius: 50%;
+}
+
+.about .text-about{
+    grid-area: 2/2/4/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .text-about p{
+    font-size: 2.5rem;
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #5A6C57;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.about .info-about{
+    grid-area: 3/3/3/3;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #85A98F;
+    padding: 2rem;
+}
+
+.about .info-about .title-info{
+    height: 6rem;
+}
+
+.about .info-about h3{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #5A6C57;
+    height: 100%; 
+    display: flex;
+    align-items: self-end;
+    justify-content: center;
+}
+
+.about .info-about p{
+    margin-top: 1rem;
+}
+
+.about .info{
+    margin-top: 3rem;
+}
+
+.about .info:nth-child(1){
+    max-height: 3rem;
+}
+
+
+
+.about .info-about p:nth-child(1){
+    margin-top: 0;
+}
+
+.about .info-about .info{
+    font-size: 2.3rem;
+    color: #D3F1DF;
+}
+
+.about .triangle-about{
+    grid-area: 2/3/2/3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* EXPERIENCE */
 
-.experience{
-   
-}
+.experience {}
 
 /* PROJECTS */
 
-.projects{
-    
-}
+.projects {}
 
 /* CONTACT */
 
-.contact{
-    
-}
+.contact {}

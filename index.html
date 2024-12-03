@@ -130,6 +130,14 @@ I'm always open to fresh ideas, collaborations, and opportunities to learn. Letâ
         } else {
             menu.classList.remove('scrolled');
         }
+
+        var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                var position = section.getBoundingClientRect();
+                if(position.top < window.innerHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
     });
 </script>
 <script src="./src/js/all.js"></script>

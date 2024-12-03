@@ -76,5 +76,14 @@
 
     <footer class="contact" id="contact">5</footer>
 </body>
-
+<script>
+    window.addEventListener('scroll', function() {
+        var menu = document.querySelector('.container-menu');
+        if (window.scrollY > 350) {
+            menu.classList.add('scrolled');
+        } else {
+            menu.classList.remove('scrolled');
+        }
+    });
+</script>
 </html>

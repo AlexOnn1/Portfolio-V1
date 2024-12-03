@@ -218,6 +218,15 @@ header .container-menu input {
     align-items: center;
 }
 
+.about .green-ball{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.about .green-ball img{
+    height: 70%;
+}
 
 /* EXPERIENCE */
 

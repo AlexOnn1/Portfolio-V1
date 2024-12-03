@@ -170,6 +170,7 @@ header .container-menu input {
     text-align: center;
     background-color: #85A98F;
     padding: 2rem;
+    border-radius: 25px;
 }
 
 .about .info-about .title-info{

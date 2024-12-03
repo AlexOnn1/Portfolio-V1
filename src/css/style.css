@@ -64,10 +64,8 @@ header .container-menu input {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../images/background.jpg');
-    background-repeat: no-repeat;
+    background: url('../images/background.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center center fixed;
 }
 
 .me h2 {
@@ -238,11 +236,129 @@ header .container-menu input {
 
 /* EXPERIENCE */
 
-.experience {}
+/* Seção principal */
+.experience {
+    position: relative;
+    background: url('../images/background-notebook.jpg') no-repeat center center fixed; /* Altere para sua imagem */
+    background-size: cover;
+    color: #85A98F;
+}
+
+/* Conteúdo */
+.info-experience {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+
+    border-radius: 10px;
+}
+
+/* Título */
+.title-experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+}
+
+.title-experience h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+/* Tecnologias */
+.container-technologies {
+    background: #222;
+    padding: 1.5rem;
+    border: #525B44 solid 1px;
+    text-align: center; /* Centraliza o conteúdo */
+    font-size: 5rem;
+}
+
+.technologies h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.technologies h5 {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.info-technologies {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre os ícones */
+    flex-wrap: wrap; /* Permite que os ícones quebrem linha se necessário */
+    margin-top: 20px;
+}
+
+.curriculum {
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    text-align: center;
+    padding: 20px;
+
+    backdrop-filter: blur(5px); /* Aplica o blur no fundo */
+    -webkit-backdrop-filter: blur(5px); /* Compatibilidade com navegadores baseados no Webkit */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra para destacar */
+}
+
+
+.curriculum h3 {
+    margin-bottom: 15px;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: 'Poppins' Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 3rem;
+    background: transparent;
+    color: #bbb;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    border: #bbb solid 1px;
+    transition: background 0.3s;
+}
+
+.btn-download:hover {
+    background: #5A6C57;
+    color: #85A98F;
+}
+
+/* Trabalhos */
+.works {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.works h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.places-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #bbb;
+}
+
+
+
+
 
 /* PROJECTS */
 
-.projects {}
+.projects {
+    height: 100vh;
+}
 
 /* CONTACT */
 

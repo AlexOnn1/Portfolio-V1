@@ -10,6 +10,7 @@ header .menu ul li a{
     font-weight: 500;
     border-radius: 50px;
     transition: 0.4s;
+    text-transform: uppercase;
 }
 
 header .menu ul li a:hover{

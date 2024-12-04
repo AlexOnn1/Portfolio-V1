@@ -72,7 +72,7 @@ header .container-menu input {
     display: block;
     font-size: 7.5rem;
     color: #D3F1DF;
-    font-family: 'Poppins' Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -114,21 +114,25 @@ header .container-menu input {
     grid-template-rows: 100px 500px 1fr;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1.5s ease, transform 0.6s ease; /* Animação */
+    transition: opacity 1.5s ease, transform 0.6s ease;
+    /* Animação */
 }
 
-.about.visible{
-    opacity: 1; /* Torna visível */ transform: translateY(0); /* Remove deslocamento */
+.about.visible {
+    opacity: 1;
+    /* Torna visível */
+    transform: translateY(0);
+    /* Remove deslocamento */
 }
 
-.about .title-about{
+.about .title-about {
     grid-area: 1/1/1/4;
     text-align: center;
     width: 100%;
     margin-top: 10rem;
 }
 
-.about .title-about h2{
+.about .title-about h2 {
     font-size: 3rem;
     font-family: 'Poppins';
     text-transform: uppercase;
@@ -136,35 +140,35 @@ header .container-menu input {
     color: #525B44;
 }
 
-.about .image-about{
+.about .image-about {
     display: flex;
     justify-content: center;
     align-items: center;
     grid-area: 2/1/2/1;
 }
 
-.about .image-about img{
+.about .image-about img {
     max-height: 300px;
     border-radius: 50%;
 }
 
-.about .text-about{
+.about .text-about {
     grid-area: 2/2/4/2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about .text-about p{
+.about .text-about p {
     font-size: 2.5rem;
-    font-family: 'Roboto' Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 600;
     color: #5A6C57;
     text-align: center;
     line-height: 5rem;
 }
 
-.about .info-about{
+.about .info-about {
     grid-area: 3/3/3/3;
     display: flex;
     flex-direction: column;
@@ -178,44 +182,49 @@ header .container-menu input {
     border-radius: 25px;
 }
 
-.about .info-about .title-info{
+.about .info-about .title-info {
     height: 6rem;
 }
 
-.about .info-about h3{
-    margin-top: 1rem;
+.about .info-about h3 {
+    margin-top: 2rem;
     font-size: 2rem;
     color: #5A6C57;
-    height: 100%; 
+    height: 100%;
     display: flex;
     align-items: self-end;
     justify-content: center;
+    
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 800;
 }
 
-.about .info-about p{
+.about .info-about p {
     margin-top: 1rem;
 }
 
-.about .info{
+.about .info {
     margin-top: 3rem;
 }
 
-.about .info:nth-child(1){
+.about .info:nth-child(1) {
     max-height: 3rem;
 }
 
 
 
-.about .info-about p:nth-child(1){
+.about .info-about p:nth-child(1) {
     margin-top: 0;
 }
 
-.about .info-about .info{
-    font-size: 2.3rem;
+.about .info-about .info {
+    font-size: 2rem;
     color: #D3F1DF;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
-.about .triangle-about{
+.about .triangle-about {
     grid-area: 2/3/2/3;
     height: 100%;
     width: 100%;
@@ -224,13 +233,13 @@ header .container-menu input {
     align-items: center;
 }
 
-.about .green-ball{
+.about .green-ball {
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-.about .green-ball img{
+.about .green-ball img {
     height: 70%;
 }
 
@@ -239,16 +248,21 @@ header .container-menu input {
 /* Seção principal */
 .experience {
     position: relative;
-    background: url('../images/background-notebook.jpg') no-repeat center center fixed; /* Altere para sua imagem */
+    background: url('../images/background-notebook.jpg') no-repeat center center fixed;
+    /* Altere para sua imagem */
     background-size: cover;
     color: #85A98F;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1.5s ease, transform 0.6s ease; /* Animação */
+    transition: opacity 1.5s ease, transform 0.6s ease;
+    /* Animação */
 }
 
-.experience.visible{
-    opacity: 1; /* Torna visível */ transform: translateY(0); /* Remove deslocamento */
+.experience.visible {
+    opacity: 1;
+    /* Torna visível */
+    transform: translateY(0);
+    /* Remove deslocamento */
 }
 
 
@@ -269,46 +283,64 @@ header .container-menu input {
 }
 
 .title-experience h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-weight: 600;
 }
+
 /* Tecnologias */
 .container-technologies {
     background: #222;
     padding: 5rem;
     border: #525B44 solid 1px;
-    text-align: center; /* Centraliza o conteúdo */
+    text-align: center;
+    /* Centraliza o conteúdo */
     font-size: 5rem;
 }
 
 .technologies h3 {
     margin-bottom: 10px;
     font-size: 2.4rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 .technologies h5 {
     font-size: 1.2rem;
     color: #ccc;
     margin-bottom: 15px;
+    font-family: 'Roboto' Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 .info-technologies {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaçamento entre os ícones */
-    flex-wrap: wrap; /* Permite que os ícones quebrem linha se necessário */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    gap: 20px;
+    /* Espaçamento entre os ícones */
+    flex-wrap: wrap;
+    /* Permite que os ícones quebrem linha se necessário */
     margin-top: 20px;
 }
 
 .curriculum {
-    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    background: rgba(255, 255, 255, 0.1);
+    /* Fundo semi-transparente */
     text-align: center;
     padding: 5rem;
 
-    backdrop-filter: blur(5px); /* Aplica o blur no fundo */
-    -webkit-backdrop-filter: blur(5px); /* Compatibilidade com navegadores baseados no Webkit */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra para destacar */
+    backdrop-filter: blur(5px);
+    /* Aplica o blur no fundo */
+    -webkit-backdrop-filter: blur(5px);
+    /* Compatibilidade com navegadores baseados no Webkit */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Adiciona uma leve sombra para destacar */
 }
 
 
@@ -316,7 +348,7 @@ header .container-menu input {
     margin-bottom: 15px;
     font-size: 5rem;
     text-transform: uppercase;
-    font-family: 'Poppins' Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 
@@ -329,8 +361,11 @@ header .container-menu input {
     text-decoration: none;
     font-weight: bold;
     border-radius: 25px;
-    border: #bbb solid 1px;
+    border: #bbb solid 3px;
     transition: background 0.3s;
+    text-transform: uppercase;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 .btn-download:hover {
@@ -350,7 +385,9 @@ header .container-menu input {
 .works h3 {
     margin-bottom: 15px;
     font-size: 3rem;
-    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 700;
 }
 
 .places-work {
@@ -373,43 +410,92 @@ header .container-menu input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgb(34, 34, 34);
+    background: -moz-linear-gradient(54deg, rgba(34, 34, 34, 1) 16%, rgba(90, 108, 87, 1) 54%, rgba(133, 169, 143, 1) 80%);
+    background: -webkit-linear-gradient(54deg, rgba(34, 34, 34, 1) 16%, rgba(90, 108, 87, 1) 54%, rgba(133, 169, 143, 1) 80%);
+    background: linear-gradient(54deg, rgba(34, 34, 34, 1) 16%, rgba(90, 108, 87, 1) 54%, rgba(133, 169, 143, 1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222222", endColorstr="#85a98f", GradientType=1);
 }
 
-.projects h2{
+.projects h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.projects h3{
+.projects h3 {
     margin-bottom: 2rem;
 }
 
-.container-projects{
-    width: 80%;
+.container-projects {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: 1.5s;
 }
 
-.container-projects .project{
-   
-    max-height: 42.9rem;
+.container-projects .project {
+    display: block;
+    max-height: 40.9rem;
     width: 50rem;
     position: relative;
-    transition: 1.5s;
+    background: transparent;
 }
 
-.project-info{
+.project-info {
     font-size: 6rem;
+    color: #222;
     position: absolute;
-    height: 42.9rem;
+    height: 37.9rem;
     width: 50rem;
-    top: 0;
-    background-color: rgba(255, 0, 0, 0.179);
-    display: none;
-    transition: 1.5s;
+    top: 3rem;
+    background: rgb(0,0,0);
+background: -moz-linear-gradient(180deg, rgba(0,0,0,0.8010853999803046) 10%, rgba(148,190,117,0.7674719546021533) 50%, rgba(0,0,0,0.8) 90%);
+background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.8010853999803046) 10%, rgba(148,190,117,0.7674719546021533) 50%, rgba(0,0,0,0.8) 90%);
+background: linear-gradient(180deg, rgba(0,0,0,0.8010853999803046) 10%, rgba(148,190,117,0.7674719546021533) 50%, rgba(0,0,0,0.8) 90%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+opacity: 0;
+transform: translatez(20px);
+transition: opacity 1.1s ease, transform 5.2s ease;
+    border-radius: 35px;
+   display:grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(3, 1fr);
+
+}
+
+.project-info .project-title{
+    grid-area: 3/1/4/1;
+    color: #85A98F;
+    border-radius: 0px 0px 35px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222b7;
+}
+
+.project-info .project-icon{
+    grid-area: 2/1/2/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-info h4{
     
 }
 
-.project:hover .project-info{
-    display: block;
+.project:hover {
+    cursor: pointer;
+}
+
+.project:hover .project-info {
+    opacity: 1;
+    /* Torna visível */
+    transform: translateY(0);
+    /* Remove deslocamento */
 }
 
 /* CONTACT */

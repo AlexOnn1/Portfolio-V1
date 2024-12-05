@@ -65,7 +65,8 @@ header .container-menu input {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url('../images/background.jpg') no-repeat center center fixed;
+    background: url('../images/background.jpg') no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
 }
 

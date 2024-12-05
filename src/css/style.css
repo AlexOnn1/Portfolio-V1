@@ -157,6 +157,7 @@ header .container-menu input {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
 }
 
 .about .text-about p {
@@ -404,6 +405,14 @@ header .container-menu input {
 
 /* PROJECTS */
 
+.projects .title{
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 .projects {
     padding: 10rem;
     display: flex;
@@ -436,21 +445,33 @@ header .container-menu input {
 
 .container-projects {
     width: 90%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     flex-direction: row;
     gap: 2rem;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
     transition: 1.5s;
+    padding: 3rem;
+    
+}
+
+
+
+.ellipsis{
+    font-size: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-projects .project {
-    display: block;
+    display: flex;
     max-height: 40.9rem;
     width: 50rem;
     position: relative;
     background: transparent;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .project-info {
@@ -467,7 +488,7 @@ background: linear-gradient(180deg, rgba(0,0,0,0.8010853999803046) 10%, rgba(148
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 opacity: 0;
 transform: translatez(20px);
-transition: opacity 1.1s ease, transform 5.2s ease;
+transition: opacity 1.1s ease, transform 3.2s ease;
 box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     border-radius: 35px;
    display:grid;
@@ -509,16 +530,6 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     /* Remove deslocamento */
 }
 
-
-
-
-
-
-
-
-.container-projects {
-    font-size: 15rem;
-}
 
 /* Modal styles */
 .modal {
@@ -706,7 +717,7 @@ background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54
 }
 
 .contact-container .rocket p{
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     opacity: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -740,7 +751,7 @@ background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54
 
 .contact-container .copyright{
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 .contact-container .copyright p{

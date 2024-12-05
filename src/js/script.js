@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function() {
     var menu = document.querySelector('.container-menu');
-    if (window.scrollY > 350) {
+    if (window.scrollY > 270) {
         menu.classList.add('scrolled');
     } else {
         menu.classList.remove('scrolled');
@@ -67,4 +67,73 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.remove('body-no-scroll');
         }
     });
+});
+
+
+// Seletores
+const emailButton = document.querySelector('.email-button');
+const emailModal = document.getElementById('email-modal');
+const closeEmailModal = document.querySelector('.close-email-modal');
+const emailFormContainer = document.getElementById('email-form-container');
+const thankYouMessage = document.getElementById('thank-you-message');
+const emailForm = document.getElementById('email-form');
+
+// Função para abrir o modal
+function openEmailModal() {
+    emailModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Bloqueia o scroll
+}
+
+// Função para fechar o modal
+function closeEmailModalFunc() {
+    emailModal.style.display = 'none';
+    document.body.style.overflow = ''; // Libera o scroll
+}
+
+// Função para mostrar a mensagem de agradecimento
+function showThankYouMessage() {
+    // Esconde o formulário
+    emailFormContainer.style.display = 'none';
+    // Exibe a mensagem de agradecimento
+    thankYouMessage.style.display = 'block';
+}
+
+// Função para resetar o modal ao ser fechado
+function resetModal() {
+    // Volta o formulário à visibilidade
+    emailFormContainer.style.display = 'block';
+    // Esconde a mensagem de agradecimento
+    thankYouMessage.style.display = 'none';
+}
+
+// Eventos de abrir e fechar o modal
+emailButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    openEmailModal();
+});
+
+closeEmailModal.addEventListener('click', () => {
+    closeEmailModalFunc();
+    resetModal(); // Resetar o modal ao fechar
+});
+
+// Fecha o modal ao clicar fora do conteúdo
+emailModal.addEventListener('click', (e) => {
+    if (e.target === emailModal) {
+        closeEmailModalFunc();
+        resetModal(); // Resetar o modal ao fechar
+    }
+});
+
+// Adiciona comportamento para enviar o formulário
+emailForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Impede o envio imediato do formulário para manipulação
+
+    // Envia o formulário após um pequeno delay
+    setTimeout(() => {
+        emailForm.submit(); // Submete o formulário para o URL
+    }, 200); // Aguarda 200ms antes de submeter
+
+    // Mostra a mensagem de agradecimento após o envio
+    showThankYouMessage();
 });

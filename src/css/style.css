@@ -628,4 +628,231 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
 
 /* CONTACT */
 
-.contact {}
+.contact {
+    background-color: #222;
+    color: #D3F1DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.contact .contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    width: 60%;
+}
+
+.contact-container .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    font-size: 3rem;
+    gap: 4rem;
+}
+
+.contact-container .socials button{
+    height: 100%;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.contact-container .socials .icon-social{
+    background-color: #333;
+    color: #D3F1DF;
+    padding: 1.5rem;
+    transition: 0.5s;
+}
+
+.socials .fa-linkedin-in:hover {
+    background-color: cornflowerblue;
+    color: white;
+    transform: scale(1.2);
+}
+
+.socials .fa-instagram:hover{
+    background: rgb(131,58,180);
+background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54%, rgba(252,176,69,1) 75%);
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.socials .fa-github:hover{
+    background-color: #ccc;
+    color: #222;
+    transform: scale(1.2);
+}
+
+.socials .fa-envelope:hover{
+    color: rgb(254, 44, 44);
+    background-color: #ccc;
+    transform: scale(1.2);
+}
+
+
+
+.contact-container .rocket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact-container .rocket a{
+    width: 6rem;
+}
+
+.contact-container .rocket p{
+    font-size: 1.2rem;
+    opacity: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    transition: 1.2s;
+}
+
+.contact-container .rocket a:hover ~ p{
+    opacity: 1
+    ;
+}
+
+
+
+.contact-container .rocket img{
+    width: 100%;
+    animation: uprocket 1.7s infinite alternate ease-in-out;
+    padding-bottom: 1rem;
+}
+
+@-webkit-keyframes uprocket {
+    0% {
+        -webkit-transform: translateY(0.4em);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 0.9;
+    }
+}
+
+.contact-container .copyright{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.contact-container .copyright p{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+/* Email Modal */
+.modal-email {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-email-content {
+    background-color: #D3F1DF;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    
+}
+
+.modal-email-content h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #525B44;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.modal-email-content form label {
+    display: block;
+    margin-top: 1rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #555;
+}
+
+.modal-email-content form input{
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.modal-email-content textarea{
+    height: 10rem;
+    width: 100%;
+    text-align: start;
+    font-family: 'Poppins';
+    font-weight: 600;
+   
+}
+
+.modal-email-content .modal-email-button {
+    margin-top: 1.5rem;
+    margin-left: 80%;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.modal-email-content .modal-email-button:hover {
+    background-color: #444;
+}
+
+.close-email-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.close-email-modal:hover {
+    color: #000;
+}
+
+#thank-you-message {
+    text-align: center;
+    display: none;
+}
+
+#thank-you-message h2 {
+    font-size: 2.5rem;
+    color: green;
+    font-family: 'Poppins', 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#thank-you-message p {
+    font-size: 1.5rem;
+    color: #555;
+    font-family: 'Poppins', 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}

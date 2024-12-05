@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./src/css/fontawesome.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/menu.css">
+
+    <link rel="shortcut icon" href="./src/favicon/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -169,8 +171,8 @@
                 <button class="project">
                     <img src="./src/images/projeto-sieg.png" alt="">
 
-                
-                    
+
+
                     <div class="project-info">
                         <div class="project-title">
                             <h4>Sieg's Portfolio</h4>
@@ -187,8 +189,8 @@
                 <button class="project">
                     <img src="./src/images/projeto-landing-page.png" alt="">
 
-                
-                    
+
+
                     <div class="project-info">
                         <div class="project-title">
                             <h4>Landing Page</h4>
@@ -223,13 +225,77 @@
                         <a id="modal-link-github" href="#" target="_blank" class="modal-button">View Source</a>
                     </div>
                 </div>
-            </div>            
+            </div>
 
         </section>
 
     </main>
 
-    <footer class="contact" id="contact">5</footer>
+    <footer class="contact" id="contact">
+        <div class="contact-container">
+            <div class="socials">
+                <a href="">
+                    <i class="fa-brands fa-linkedin-in icon-social"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram icon-social"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-github icon-social"></i>
+                </a>
+                <button class="email-button">
+                    <i class="fa-regular fa-envelope icon-social"></i>
+                </button>
+            </div>
+            <div class="rocket">
+                <a href="#me">
+                    <img src="src/images/rocket.png" alt="A rocket">
+                </a>
+
+                <p>Send me up!</p>
+            </div>
+            <div class="copyright">
+                <p>
+                    <i class="fa-regular fa-copyright"></i>
+                    Alexsander Albino 2024
+                </p>
+            </div>
+
+            
+        </div>
+      <!-- Modal para enviar email -->
+<div id="email-modal" class="modal-email">
+    <div class="modal-email-content">
+        <span class="close-email-modal"><i class="fa-solid fa-circle-xmark"></i></span>
+        
+        <!-- Formulário de envio -->
+        <div id="email-form-container">
+            <h2>Send a Email</h2>
+            <form id="email-form" action="https://formsubmit.co/3c01685e80d4102e15118937002fedab" method="POST" target="_blank">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="modal-email-button">Send</button>
+                <input type="hidden" name="_template" value="table">
+            </form>
+        </div>
+        
+        <!-- Mensagem de agradecimento -->
+        <div id="thank-you-message">
+            <h2>Thank you for your message!</h2>
+            <p>Your email has been successfully sent. I will get back to you soon!</p>
+        </div>
+    </div>
+</div>
+
+
+    </footer>
 </body>
 <script src="./src/js/script.js">
 </script>

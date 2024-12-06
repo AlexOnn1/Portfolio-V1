@@ -58,7 +58,7 @@ header .container-menu input {
 
 .me {
     background: transparent;
-    height: 100vh;
+    min-height: 100vh;
     max-height: 200vh;
     position: relative;
     display: flex;

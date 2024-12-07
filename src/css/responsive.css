@@ -239,7 +239,7 @@
         background-size: cover;
         height: 40vh;
         max-height: 40vh;
-      
+        aspect-ratio: 4/4;
     }
 
     .me h2{

@@ -10,10 +10,11 @@
         background-size: cover;
         height: 40vh;
         max-height: 60vh;
+        aspect-ratio: 4.2/9;
     }
 
     .me h2 {
-        font-size: 4rem;
+        font-size: 3.5rem;
         text-align: center;
     }
 
@@ -144,6 +145,10 @@
         font-size: 3rem;
     }
 
+    .me{
+        aspect-ratio: 4/4;
+    }
+
     .me h2 {
         font-size: 5rem;
     }
@@ -227,7 +232,19 @@
         font-size: 2rem;
     }
 }
+
 @media(max-width: 400px) {
+
+    .me{
+        background-size: cover;
+        height: 40vh;
+        max-height: 40vh;
+      
+    }
+
+    .me h2{
+        font-size: 3rem;
+    }
 
     .projects .title{
         width: 40rem;

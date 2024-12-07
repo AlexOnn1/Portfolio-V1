@@ -58,7 +58,7 @@ header .container-menu input {
 
 .me {
     background: transparent;
-    min-height: 100vh;
+    min-height: 100%;
     max-height: 200vh;
     position: relative;
     display: flex;
@@ -68,7 +68,7 @@ header .container-menu input {
     background: url('../images/background.jpg') no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
-    aspect-ratio: 16/9;
+
     max-width: 100%;
 }
 

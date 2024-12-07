@@ -8,7 +8,8 @@
 
     .me{
         background-size: cover;
-        max-height: 60vh;
+        min-height: 85vh;
+        max-height: 95vh;
     }
 
     .me h2 {
@@ -233,7 +234,8 @@
 
     .me{
         background-size: cover;
-        max-height: 40vh;
+        min-height: 85vh;
+        max-height: 95vh;
     }
 
     .me h2{

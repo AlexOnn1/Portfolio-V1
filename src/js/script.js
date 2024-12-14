@@ -39,6 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "A project that I made to finish the HTML5 and CSS3 advanced module from the DevQuest course, in this landing page I used all the concepts of Flexbox and Grid that I learned in the module. Honestly I'm proud with the result, I think I've advanced a lot in my coding knowledge ",
             siteLink: "https://alexonn1.github.io/landing-page-com-grid/",
             githubLink: "https://github.com/AlexOnn1/landing-page-com-grid"
+        },
+        {title: "Huddle Base",
+            image: "./src/images/tela-huddle.png",
+            description: "In this project, I developed a responsive landing page based on the Frontend Mentor challenge. The focus was on creating a pixel-perfect design that adapts seamlessly to different screen sizes. This project allowed me to refine my HTML and CSS skills while implementing best practices for accessibility and responsiveness. ",
+            siteLink: "https://alexonn1.github.io/projeto-huddle-base/",
+            githubLink: "https://github.com/AlexOnn1/projeto-huddle-base"
         }
     ];
 

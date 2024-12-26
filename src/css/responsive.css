@@ -1,12 +1,10 @@
-
-
 @media(max-width: 768px) {
     header .container-menu h1 {
         font-size: 2.5rem;
         text-align: center;
     }
 
-    .me{
+    .me {
         background-size: cover;
         min-height: 85vh;
         max-height: 95vh;
@@ -29,18 +27,18 @@
         max-height: 200vh;
     }
 
-    .about .title-about{
+    .about .title-about {
         font-size: 2.5rem;
         margin-bottom: 2rem;
     }
 
     .about .image-about img {
         max-height: 200px;
-       
+
 
     }
 
-    .about .text-about p{
+    .about .text-about p {
         margin-top: 1rem;
         font-size: 2rem;
         line-height: 2.5rem;
@@ -49,38 +47,38 @@
 
     .about .info-about {
         margin: 2rem;
-        
+
     }
 
-    .about .green-ball{
+    .about .green-ball {
         display: none;
-        
+
 
     }
 
-    .about .triangle-about{
+    .about .triangle-about {
         display: none;
-        
+
 
     }
 
-    .info-experience .title-experience{
+    .info-experience .title-experience {
         font-size: 3rem;
         gap: 1rem;
         width: 100%;
     }
 
-    .info-experience .title-experience h2{
+    .info-experience .title-experience h2 {
         font-size: 2rem;
         font-weight: 900;
     }
 
-    .curriculum h3{
+    .curriculum h3 {
         font-size: 3rem;
     }
 
 
-    .projects .title{
+    .projects .title {
         width: 40rem;
         display: flex;
         flex-direction: column;
@@ -96,25 +94,29 @@
         align-items: center;
     }
 
-    .project{
+    .project {
         max-width: 40rem;
     }
 
-    .container-projects .project img{
+    .container-projects .project img {
         max-height: 20rem;
     }
 
     .project-info {
-       height: 100%;
-       width: 100%;
-       top: 0;
-       left: 50%; transform: translateY(0);transform: translateX(-50%);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateY(0);
+        transform: translateX(-50%);
     }
 
     .project:hover .project-info {
         opacity: 1;
         /* Torna visível */
-        left: 50%; transform: translateY(0);transform: translateX(-50%);
+        left: 50%;
+        transform: translateY(0);
+        transform: translateX(-50%);
 
         /* Remove deslocamento */
     }
@@ -127,7 +129,7 @@
     .project-info h4 {
         font-size: 1.8rem;
     }
-    
+
     .modal-content {
         width: 90%;
         padding: 1.5rem;
@@ -160,18 +162,18 @@
         padding: 2rem;
     }
 
-    .about .title-about{
+    .about .title-about {
         font-size: 2.5rem;
         margin-bottom: 3rem;
     }
 
     .about .image-about img {
         max-height: 200px;
-       
+
 
     }
 
-    .about .text-about p{
+    .about .text-about p {
         margin-top: 1rem;
         font-size: 2rem;
         line-height: 2.5rem;
@@ -180,22 +182,22 @@
 
     .about .info-about {
         margin: 2rem;
-        
+
     }
 
-    .about .green-ball{
+    .about .green-ball {
         display: none;
-        
+
 
     }
 
-    .about .triangle-about{
+    .about .triangle-about {
         display: none;
-        
+
 
     }
-    
-    .projects .title{
+
+    .projects .title {
         width: 80rem;
         display: flex;
         flex-direction: column;
@@ -225,24 +227,24 @@
         padding: 2rem;
     }
 
-    .contact .rocket p{
+    .contact .rocket p {
         font-size: 2rem;
     }
 }
 
 @media(max-width: 400px) {
 
-    .me{
+    .me {
         background-size: cover;
         min-height: 85vh;
         max-height: 95vh;
     }
 
-    .me h2{
+    .me h2 {
         font-size: 3rem;
     }
 
-    .projects .title{
+    .projects .title {
         width: 40rem;
         display: flex;
         flex-direction: column;
@@ -259,28 +261,32 @@
         width: 98vw;
     }
 
-    .project{
+    .project {
         width: 70%;
-       height: 100%;
+        height: 100%;
     }
 
-    .container-projects .project img{
-       width: 70%;
-       height: 100%;
+    .container-projects .project img {
+        width: 70%;
+        height: 100%;
 
     }
 
     .project-info {
         width: 70%;
         height: 100%;
-       top: 0;
-       left: 50%; transform: translateY(0);transform: translateX(-50%);
+        top: 0;
+        left: 50%;
+        transform: translateY(0);
+        transform: translateX(-50%);
     }
 
     .project:hover .project-info {
         opacity: 1;
         /* Torna visível */
-        left: 50%; transform: translateY(0);transform: translateX(-50%);
+        left: 50%;
+        transform: translateY(0);
+        transform: translateX(-50%);
 
         /* Remove deslocamento */
     }
@@ -293,5 +299,5 @@
     .project-info h4 {
         font-size: 1.8rem;
     }
-    
+
 }

@@ -1,4 +1,4 @@
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var menu = document.querySelector('.container-menu');
     if (window.scrollY > 270) {
         menu.classList.add('scrolled');
@@ -7,12 +7,12 @@ window.addEventListener('scroll', function() {
     }
 
     var sections = document.querySelectorAll('section');
-        sections.forEach(function(section) {
-            var position = section.getBoundingClientRect();
-            if(position.top < window.innerHeight - 100) {
-                section.classList.add('visible');
-            }
-        });
+    sections.forEach(function (section) {
+        var position = section.getBoundingClientRect();
+        if (position.top < window.innerHeight - 100) {
+            section.classList.add('visible');
+        }
+    });
 });
 
 // Modal functionality
@@ -28,19 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectButtons = document.querySelectorAll('.project');
 
     const projectData = [
-        {title: "Sieg's Portfolio",
+        {
+            title: "Sieg's Portfolio",
             image: "./src/images/tela-sieg.png",
             description: "My first big project, here we have a portfolio project with Sieg's work, with 3 pages showing his Work, Studies and a whole page about him. I only used HTML5 and CSS3 in the development as I hadn't studied JavaScript yet, so it was a great opportunity to test my knowledge, I was very satisfied with the project and so was Sieg.",
             siteLink: "https://alexonn1.github.io/Sieg/",
             githubLink: "https://github.com/AlexOnn1/Sieg"
         },
-        {title: "Landing Page",
+        {
+            title: "Landing Page",
             image: "./src/images/tela-landing-page.png",
             description: "A project that I made to finish the HTML5 and CSS3 advanced module from the DevQuest course, in this landing page I used all the concepts of Flexbox and Grid that I learned in the module. Honestly I'm proud with the result, I think I've advanced a lot in my coding knowledge ",
             siteLink: "https://alexonn1.github.io/landing-page-com-grid/",
             githubLink: "https://github.com/AlexOnn1/landing-page-com-grid"
         },
-        {title: "Huddle Base",
+        {
+            title: "Huddle Base",
             image: "./src/images/tela-huddle.png",
             description: "In this project, I developed a responsive landing page based on the Frontend Mentor challenge. The focus was on creating a pixel-perfect design that adapts seamlessly to different screen sizes. This project allowed me to refine my HTML and CSS skills while implementing best practices for accessibility and responsiveness. ",
             siteLink: "https://alexonn1.github.io/projeto-huddle-base/",

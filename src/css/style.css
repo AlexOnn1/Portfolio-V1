@@ -200,7 +200,7 @@ header .container-menu input {
     display: flex;
     align-items: self-end;
     justify-content: center;
-    
+
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 800;
 }
@@ -410,7 +410,7 @@ header .container-menu input {
 
 /* PROJECTS */
 
-.projects .title{
+.projects .title {
     width: 80rem;
     display: flex;
     flex-direction: column;
@@ -456,12 +456,12 @@ header .container-menu input {
     gap: 2rem;
     transition: 1.5s;
     padding: 3rem;
-    
+
 }
 
 
 
-.ellipsis{
+.ellipsis {
     font-size: 13rem;
     display: flex;
     justify-content: center;
@@ -486,23 +486,23 @@ header .container-menu input {
     height: 38.9rem;
     width: 50rem;
     top: 2rem;
-    background: rgb(0,0,0);
-background: -moz-linear-gradient(180deg, rgba(0,0,0,0.8010853999803046) 10%, rgba(148,190,117,0.7674719546021533) 50%, rgba(0,0,0,0.8) 90%);
-background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.8010853999803046) 10%, rgba(148,190,117,0.7674719546021533) 50%, rgba(0,0,0,0.8) 90%);
-background: linear-gradient(180deg, rgba(0,0,0,0.8010853999803046) 10%, rgba(148,190,117,0.7674719546021533) 50%, rgba(0,0,0,0.8) 90%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
-opacity: 0;
-transform: translatez(20px);
-transition: opacity 1.1s ease, transform 3.2s ease;
-box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.8010853999803046) 10%, rgba(148, 190, 117, 0.7674719546021533) 50%, rgba(0, 0, 0, 0.8) 90%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.8010853999803046) 10%, rgba(148, 190, 117, 0.7674719546021533) 50%, rgba(0, 0, 0, 0.8) 90%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8010853999803046) 10%, rgba(148, 190, 117, 0.7674719546021533) 50%, rgba(0, 0, 0, 0.8) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+    opacity: 0;
+    transform: translatez(20px);
+    transition: opacity 1.1s ease, transform 3.2s ease;
+    box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     border-radius: 35px;
-   display:grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
 
 }
 
-.project-info .project-title{
+.project-info .project-title {
     grid-area: 3/1/4/1;
     color: #85A98F;
     border-radius: 0px 0px 35px 35px;
@@ -512,14 +512,14 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     background-color: #222222e1;
 }
 
-.project-info .project-icon{
+.project-info .project-icon {
     grid-area: 2/1/2/1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project-info h4{
+.project-info h4 {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
@@ -562,7 +562,7 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     overflow-y: auto;
     text-align: center;
     box-shadow: 0rem 0rem 1em 1em rgba(34, 34, 34, 0.952);
-    
+
 }
 
 .modal-content .close-modal {
@@ -575,7 +575,7 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     color: #85A98F;
 }
 
-.modal-content h2{
+.modal-content h2 {
     font-size: 2rem;
     font-weight: 900;
     color: #85A98F;
@@ -589,13 +589,13 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
 }
 
 
-.modal-content .modal-description{
+.modal-content .modal-description {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.modal-content .modal-description p{
+.modal-content .modal-description p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
@@ -614,8 +614,8 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     align-items: center;
 }
 
-.modal-buttons p{
-    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+.modal-buttons p {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: #85A98F;
     font-size: 2rem;
     font-weight: 900;
@@ -653,7 +653,7 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     padding: 3rem;
 }
 
-.contact .contact-container{
+.contact .contact-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -661,7 +661,7 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     width: 60%;
 }
 
-.contact-container .socials{
+.contact-container .socials {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -670,13 +670,13 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     gap: 4rem;
 }
 
-.contact-container .socials button{
+.contact-container .socials button {
     height: 100%;
     font-size: 3rem;
     text-decoration: none;
 }
 
-.contact-container .socials .icon-social{
+.contact-container .socials .icon-social {
     background-color: #333;
     color: #D3F1DF;
     padding: 1.5rem;
@@ -689,20 +689,20 @@ box-shadow: 0rem 0rem 1em 0.4em rgba(34, 34, 34, 0.838);
     transform: scale(1.2);
 }
 
-.socials .fa-instagram:hover{
-    background: rgb(131,58,180);
-background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54%, rgba(252,176,69,1) 75%);
+.socials .fa-instagram:hover {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(216deg, rgba(131, 58, 180, 1) 14%, rgba(253, 29, 29, 1) 54%, rgba(252, 176, 69, 1) 75%);
     color: #fff;
     transform: scale(1.2);
 }
 
-.socials .fa-github:hover{
+.socials .fa-github:hover {
     background-color: #ccc;
     color: #222;
     transform: scale(1.2);
 }
 
-.socials .fa-envelope:hover{
+.socials .fa-envelope:hover {
     color: rgb(254, 44, 44);
     background-color: #ccc;
     transform: scale(1.2);
@@ -710,18 +710,19 @@ background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54
 
 
 
-.contact-container .rocket{
+.contact-container .rocket {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.contact-container .rocket a{
+
+.contact-container .rocket a {
     width: 6rem;
 }
 
-.contact-container .rocket p{
+.contact-container .rocket p {
     font-size: 1.7rem;
     opacity: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -729,14 +730,13 @@ background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54
     transition: 1.2s;
 }
 
-.contact-container .rocket a:hover ~ p{
-    opacity: 1
-    ;
+.contact-container .rocket a:hover~p {
+    opacity: 1;
 }
 
 
 
-.contact-container .rocket img{
+.contact-container .rocket img {
     width: 100%;
     animation: uprocket 1.7s infinite alternate ease-in-out;
     padding-bottom: 1rem;
@@ -754,15 +754,16 @@ background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54
     }
 }
 
-.contact-container .copyright{
+.contact-container .copyright {
     text-align: center;
     font-size: 1.8rem;
 }
 
-.contact-container .copyright p{
+.contact-container .copyright p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 300;
 }
+
 /* Email Modal */
 .modal-email {
     display: none;
@@ -785,7 +786,7 @@ background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54
     max-width: 400px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     position: relative;
-    
+
 }
 
 .modal-email-content h2 {
@@ -805,7 +806,7 @@ background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54
     color: #555;
 }
 
-.modal-email-content form input{
+.modal-email-content form input {
     width: 100%;
     padding: 0.8rem;
     margin-top: 0.5rem;
@@ -815,13 +816,13 @@ background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54
     font-weight: 600;
 }
 
-.modal-email-content textarea{
+.modal-email-content textarea {
     height: 10rem;
     width: 100%;
     text-align: start;
     font-family: 'Poppins';
     font-weight: 600;
-   
+
 }
 
 .modal-email-content .modal-email-button {
@@ -834,7 +835,7 @@ background: linear-gradient(216deg, rgba(131,58,180,1) 14%, rgba(253,29,29,1) 54
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    
+
 }
 
 .modal-email-content .modal-email-button:hover {

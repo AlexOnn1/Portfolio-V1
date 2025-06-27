@@ -48,6 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "In this project, I developed a responsive landing page based on the Frontend Mentor challenge. The focus was on creating a pixel-perfect design that adapts seamlessly to different screen sizes. This project allowed me to refine my HTML and CSS skills while implementing best practices for accessibility and responsiveness. ",
             siteLink: "https://alexonn1.github.io/projeto-huddle-base/",
             githubLink: "https://github.com/AlexOnn1/projeto-huddle-base"
+        },
+        {
+            title: "Shopping Cart",
+            image: "./src/images/tela-carrinho.png",
+            description: "A simple sales system project, featuring a shopping cart, product, customer and order registration. Developed with pure Python, using streamlit. Allows adding products to the cart, calculating the total purchase value, removing items, finalizing orders and viewing history. Ideal for practicing programming logic, DOM manipulation and local storage with LocalStorage.",
+            siteLink: "https://sistema-de-vendas.streamlit.app/",
+            githubLink: "https://github.com/AlexOnn1/Sistema-de-vendas"
         }
     ];
 

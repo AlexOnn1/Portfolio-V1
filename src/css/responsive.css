@@ -92,6 +92,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 3rem;
     }
 
     .project {
@@ -109,6 +110,7 @@
         left: 50%;
         transform: translateY(0);
         transform: translateX(-50%);
+        border-radius: 20px;
     }
 
     .project:hover .project-info {
@@ -133,6 +135,12 @@
     .modal-content {
         width: 90%;
         padding: 1.5rem;
+    }
+    .container-technologies .technologies .fa-solid,.fa-code{
+        font-size: 1.8rem;
+    }
+    .container-technologies h5{
+        font-size: 1.8rem;
     }
 }
 
@@ -297,6 +305,10 @@
     }
 
     .project-info h4 {
+        font-size: 1.8rem;
+    }
+
+    .container-technologies .technologies .fa-solid,.fa-code{
         font-size: 1.8rem;
     }
 

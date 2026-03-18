@@ -55,6 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
             description: "A simple sales system project, featuring a shopping cart, product, customer and order registration. Developed with pure Python, using streamlit. Allows adding products to the cart, calculating the total purchase value, removing items, finalizing orders and viewing history. Ideal for practicing programming logic, DOM manipulation and local storage with LocalStorage.",
             siteLink: "https://sistema-de-vendas.streamlit.app/",
             githubLink: "https://github.com/AlexOnn1/Sistema-de-vendas"
+        },
+        {
+            title: "Django Task Manager",
+            image: "./src/images/tela-to-do.png",
+            description: "A functional task management system featuring full CRUD (Create, Read, Update, Delete) capabilities for personal organization. Developed with Python using the Django framework, the project implements a clean MVT (Model-View-Template) architecture. It allows users to register tasks with descriptions, track completion status, and manage deadlines through a centralized dashboard. The interface is fully responsive, utilizing modern CSS with media queries to ensure a seamless experience across desktop and mobile devices. Ideal for practicing backend logic, relational database management with SQLite, and cloud deployment using Gunicorn, WhiteNoise, and Environment Variables for security",
+            siteLink: "https://primeiro-projeto-django-ke1o.onrender.com/",
+            githubLink: "https://github.com/AlexOnn1/Primeiro-projeto-django"
         }
     ];
 
